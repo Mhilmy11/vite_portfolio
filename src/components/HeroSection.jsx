@@ -4,22 +4,22 @@ import { FiArrowDown } from "react-icons/fi";
 export default function HeroSection() {
   return (
     <>
-      <section className="relative min-h-screen bg-black overflow-hidden flex items-center">
+      <section className="relative min-h-screen bg-slate-900 overflow-hidden flex items-center">
         <div className="absolute inset-0">
           <motion.div
             animate={{ x: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 5 }}
-            className="absolute -top-2 left-1/4 w-[70vw] md:w-[45vw] h-[40vh] md:h-[38vh] bg-blue-900 clip-diagonal"
+            className="absolute -top-2 left-1/4 w-[70vw] md:w-[45vw] h-[40vh] md:h-[40vh] bg-slate-800 clip-diagonal"
           />
           <motion.div
             animate={{ x: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 5 }}
-            className="absolute bottom-0 -right-2 w-[40vw] md:w-[45vw] h-[50vh] md:h-[70vh] bg-blue-900 rounded-tl-[200px] md:rounded-tl-[300px]"
+            className="absolute bottom-0 -right-2 w-[40vw] md:w-[45vw] h-[50vh] md:h-[70vh] bg-slate-800 rounded-tl-[200px] md:rounded-tl-[300px]"
           />
           <motion.div
             animate={{ x: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 5 }}
-            className="absolute bottom-0 -left-2 w-[40vw] md:w-[45vw] h-[50vh] md:h-[48vh] bg-blue-900 clip-diagonal"
+            className="absolute bottom-0 -left-2 w-[40vw] md:w-[45vw] h-[48vh] md:h-[47vh] bg-slate-800 clip-diagonal"
           />
         </div>
 
@@ -31,11 +31,12 @@ export default function HeroSection() {
             className="flex flex-col gap-4"
           >
             <div>
-              <span className=" text-white font-semibold text-3xl sm:text-4xl leading-none">
+              <span className=" text-gray-200 font-semibold text-2xl sm:text-4xl leading-none">
                 Muhammad Hilmy Setiawanto
               </span>
-              <h1 className=" text-gray-400 text-lg sm:text-xl md:text-2xl pt-1">
-                Business Analyst & Frontend Developer
+              <h1 className=" text-slate-400 text-sm md:text-xl pt-1 md:w-2xl">
+                Frontend Engineer and Business Analyst with 5+ years of hands-on
+                experience in software development.
               </h1>
             </div>
 
@@ -45,7 +46,7 @@ export default function HeroSection() {
               className="mt-8 sm:mt-10"
             >
               <button className=" cursor-pointer">
-                <FiArrowDown className="text-xl sm:text-2xl text-white" />
+                <FiArrowDown className="text-xl sm:text-2xl text-slate-400" />
               </button>
             </motion.div>
           </motion.div>
