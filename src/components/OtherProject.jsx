@@ -15,7 +15,7 @@ export default function OtherProject() {
           </p>
         </div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
           <div className=" bg-slate-900/50 p-6 rounded-xl border border-slate-700 flex flex-col space-y-20">
             <div>
               <h1 className=" text-gray-200 font-bold">Kiara Group</h1>
@@ -43,9 +43,12 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button
+                onClick={() => window.open("https://kiaragroup.id/", "_blank")}
+                className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200"
+              >
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>
@@ -82,9 +85,14 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button
+                onClick={() =>
+                  window.open("http://ravatraacademy.id/", "_blank")
+                }
+                className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200"
+              >
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>
@@ -116,9 +124,12 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button
+                onClick={() => window.open("https://rac.co.id/", "blank_")}
+                className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200"
+              >
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>
@@ -150,9 +161,9 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200">
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>
@@ -184,9 +195,14 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button
+                onClick={() =>
+                  window.open("https://kopijatigota.id/", "blank_")
+                }
+                className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200"
+              >
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>
@@ -218,9 +234,14 @@ export default function OtherProject() {
             </div>
 
             <div className=" mt-auto pl-2">
-              <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
+              <button
+                onClick={() =>
+                  window.open("https://dsaindoconsulting.co.id/", "blank_")
+                }
+                className=" hover:underline cursor-pointer flex items-center gap-2 text-gray-200"
+              >
                 <HiOutlineExternalLink size={22} />
-                <p className=" underline">Demo</p>
+                <p>Demo</p>
               </button>
             </div>
           </div>

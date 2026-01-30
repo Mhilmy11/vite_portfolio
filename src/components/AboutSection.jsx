@@ -15,7 +15,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className=" space-y-2">
+        <div className=" space-y-2 mt-2">
           <p className=" text-slate-400 text-lg">
             I'm from Depok, Indonesia. Graduated at 2026 from{" "}
             <span className=" font-bold text-white">

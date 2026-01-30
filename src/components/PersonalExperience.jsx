@@ -13,7 +13,7 @@ export default function PersonalExperience() {
           </p>
         </div>
 
-        <div>
+        <div className=" mt-2">
           <div className=" flex justify-between items-center">
             <div>
               <h1 className=" font-bold text-gray-200 text-xl">
