@@ -1,4 +1,5 @@
 import "./App.css";
+import { useRef } from "react";
 import AboutSection from "./components/AboutSection";
 import ContactPerson from "./components/ContactPerson";
 import Container from "./components/Container";
@@ -8,12 +9,17 @@ import PersonalExperience from "./components/PersonalExperience";
 import TechnicalSkill from "./components/TechnicalSkill";
 
 function App() {
+  const scrollToBottom = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className=" font-sans">
-      <HeroSection />
+      <HeroSection clickToSection={() => scrollToSection(scrollToBottom)} />
 
       <div className=" bg-slate-800 pt-20">
-        <AboutSection />
+        <AboutSection scrollToBottom={scrollToBottom} />
 
         <OtherProject />
 
@@ -24,7 +30,7 @@ function App() {
         <ContactPerson />
 
         <Container>
-          <div className=" text-gray-200 font-semibold mt-14 mb-10 flex justify-between items-center px-10">
+          <div className=" text-gray-200 font-semibold mt-14 mb-10 flex justify-between items-center px-10 italic">
             <p>© {new Date().getFullYear()}</p>
             <p>Muhammad Hilmy Setiawanto</p>
           </div>

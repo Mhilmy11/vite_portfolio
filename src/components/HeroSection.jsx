@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
 
-export default function HeroSection() {
+export default function HeroSection({ clickToSection }) {
   return (
     <>
       <section className="relative min-h-screen bg-slate-900 overflow-hidden flex items-center">
@@ -45,7 +45,7 @@ export default function HeroSection() {
               transition={{ repeat: Infinity, duration: 2 }}
               className="mt-8 sm:mt-10"
             >
-              <button className=" cursor-pointer">
+              <button onClick={clickToSection} className=" cursor-pointer">
                 <FiArrowDown className="text-xl sm:text-2xl text-slate-400" />
               </button>
             </motion.div>

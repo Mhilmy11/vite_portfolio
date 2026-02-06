@@ -26,11 +26,22 @@ export default function ContactPerson() {
             <AiOutlineMail size={21} />
             <p>Email</p>
           </button>
-          <button className=" cursor-pointer hover:underline decoration-slate-600 decoration-2 flex items-center gap-1 font-semibold">
+          <button
+            onClick={() => window.open("https://github.com/Mhilmy11", "blank_")}
+            className=" cursor-pointer hover:underline decoration-slate-600 decoration-2 flex items-center gap-1 font-semibold"
+          >
             <AiOutlineGithub size={21} />
             <p>Github</p>
           </button>
-          <button className=" cursor-pointer hover:underline decoration-slate-600 decoration-2 flex items-center gap-1 font-semibold">
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/hilmystwnt?igsh=MThuNjIzcDVuc2I0ZA==",
+                "blank_",
+              )
+            }
+            className=" cursor-pointer hover:underline decoration-slate-600 decoration-2 flex items-center gap-1 font-semibold"
+          >
             <AiOutlineInstagram size={21} />
             <p>Instagram</p>
           </button>

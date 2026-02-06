@@ -2,10 +2,10 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import StackIcon from "tech-stack-icons";
 import Container from "./Container";
 
-export default function AboutSection() {
+export default function AboutSection({ scrollToBottom }) {
   return (
     <Container>
-      <div className=" grid grid-cols-1 md:grid-cols-2">
+      <div ref={scrollToBottom} className=" grid grid-cols-1 md:grid-cols-2">
         <div>
           <h1 className=" text-gray-200 text-2xl md:text-3xl font-bold">
             About Me
@@ -54,13 +54,6 @@ export default function AboutSection() {
                     <p className=" text-white">Oracle</p>
                   </div>
                 </div>
-              </div>
-
-              <div className=" mt-auto pl-2">
-                <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
-                  <HiOutlineExternalLink size={22} />
-                  <p className=" underline">Demo</p>
-                </button>
               </div>
             </div>
 
@@ -129,12 +122,12 @@ export default function AboutSection() {
                 </div>
               </div>
 
-              <div className=" mt-auto pl-2">
+              {/* <div className=" mt-auto pl-2">
                 <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
                   <HiOutlineExternalLink size={22} />
                   <p className=" underline">Demo</p>
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -164,12 +157,12 @@ export default function AboutSection() {
               </div>
             </div>
 
-            <div className=" mt-auto pl-2">
+            {/* <div className=" mt-auto pl-2">
               <button className=" cursor-pointer flex items-center gap-2 text-gray-200">
                 <HiOutlineExternalLink size={22} />
                 <p className=" underline">Demo</p>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
