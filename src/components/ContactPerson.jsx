@@ -48,7 +48,7 @@ export default function ContactPerson() {
           <button
             onClick={() =>
               window.open(
-                "https://id.linkedin.com/company/dsa-indo-consulting",
+                "https://www.linkedin.com/in/muhammadhilmysetiawanto/",
                 "_blank",
               )
             }
