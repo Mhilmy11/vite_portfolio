@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { FiArrowDown } from "react-icons/fi";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
-export default function HeroSection({ clickToSection }) {
+export default function HeroSection({ clickToSection, pdfPath }) {
   return (
     <>
       <section className="relative min-h-screen bg-slate-900 overflow-hidden flex items-center">
@@ -40,15 +41,30 @@ export default function HeroSection({ clickToSection }) {
               </h1>
             </div>
 
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-              className="mt-8 sm:mt-10"
-            >
-              <button onClick={clickToSection} className=" cursor-pointer">
-                <FiArrowDown className="text-xl sm:text-2xl text-slate-400" />
-              </button>
-            </motion.div>
+            <div className=" flex items-center gap-5">
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+                className="mt-8 sm:mt-10 flex"
+              >
+                <button
+                  onClick={clickToSection}
+                  className=" transition hover:border-slate-300 cursor-pointer bg-slate-900/50 p-2 rounded-full border border-slate-700 text-gray-200"
+                >
+                  <FiArrowDown className="text-xl sm:text-2xl text-slate-400" />
+                </button>
+              </motion.div>
+
+              <div className="mt-8 sm:mt-10">
+                <button
+                  onClick={() => window.open(pdfPath, "blank_")}
+                  className=" hover:scale-105 transition hover:border-slate-300 flex items-center gap-2 font-semibold cursor-pointer bg-slate-900/50 px-5 py-2 rounded-3xl border border-slate-700 text-gray-200 text-lg"
+                >
+                  <p>Check my CV</p>
+                  <HiOutlineExternalLink size={22} />
+                </button>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
