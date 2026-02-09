@@ -1,11 +1,11 @@
-import { HiOutlineExternalLink } from "react-icons/hi";
+// import { HiOutlineExternalLink } from "react-icons/hi";
 import StackIcon from "tech-stack-icons";
 import Container from "./Container";
 
-export default function AboutSection({ scrollToBottom }) {
+export default function AboutSection({}) {
   return (
     <Container>
-      <div ref={scrollToBottom} className=" grid grid-cols-1 md:grid-cols-2">
+      <div className=" grid grid-cols-1 md:grid-cols-2">
         <div>
           <h1 className=" text-gray-200 text-2xl md:text-3xl font-bold">
             About Me

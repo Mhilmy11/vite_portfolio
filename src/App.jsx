@@ -22,7 +22,10 @@ function App() {
         clickToSection={() => scrollToSection(scrollToBottom)}
       />
 
-      <div className="relative min-h-screen pt-20 overflow-hidden">
+      <div
+        className="relative min-h-screen pt-20 overflow-hidden"
+        ref={scrollToBottom}
+      >
         <div className="absolute inset-0 -z-10 bg-black">
           <LiquidEther
             colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
@@ -47,7 +50,7 @@ function App() {
         </div>
 
         <div className="relative z-10">
-          <AboutSection scrollToBottom={scrollToBottom} />
+          <AboutSection />
           <OtherProject />
           <PersonalExperience />
           <TechnicalSkill />
