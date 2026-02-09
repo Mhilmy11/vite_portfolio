@@ -14,7 +14,7 @@ export default function HeroSection({ clickToSection, pdfPath }) {
             hueShift={0}
             noiseIntensity={0}
             scanlineIntensity={0}
-            speed={0.5}
+            speed={1.5}
             scanlineFrequency={0}
             warpAmount={0}
           />
@@ -30,12 +30,8 @@ export default function HeroSection({ clickToSection, pdfPath }) {
                 direction="top"
                 className=" text-gray-200 font-semibold text-2xl sm:text-4xl leading-none"
               />
-              {/* <span className=" text-gray-200 font-semibold text-2xl sm:text-4xl leading-none">
-                Muhammad Hilmy Setiawanto
-              </span> */}
               <TextType
-                text="Frontend Engineer and Business Analyst with 5+ years of hands-on
-                experience in software development."
+                text="Frontend Engineer and Business Analyst with 5+ years of hands-on experience in software development."
                 typingSpeed={75}
                 pauseDuration={1500}
                 showCursor
@@ -47,10 +43,6 @@ export default function HeroSection({ clickToSection, pdfPath }) {
                 cursorBlinkDuration={0.5}
                 className=" text-slate-400 text-sm md:text-xl pt-1 md:w-2xl"
               />
-              {/* <h1 className=" text-slate-400 text-sm md:text-xl pt-1 md:w-2xl">
-                Frontend Engineer and Business Analyst with 5+ years of hands-on
-                experience in software development.
-              </h1> */}
             </div>
 
             <div className=" flex items-center gap-5">
