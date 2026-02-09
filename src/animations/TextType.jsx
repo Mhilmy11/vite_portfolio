@@ -9,7 +9,6 @@ import {
   useCallback,
 } from "react";
 import { gsap } from "gsap";
-import "../App.css";
 
 const TextType = ({
   text,
@@ -91,6 +90,7 @@ const TextType = ({
     if (!isVisible) return;
 
     let timeout;
+
     const currentText = textArray[currentTextIndex];
     const processedText = reverseMode
       ? currentText.split("").reverse().join("")
@@ -169,11 +169,11 @@ const TextType = ({
     Component,
     {
       ref: containerRef,
-      className: `text-type ${className}`,
+      className: `inline-block whitespace-pre-wrap tracking-tight ${className}`,
       ...props,
     },
     <span
-      className="text-type__content"
+      className="inline"
       style={{ color: getCurrentTextColor() || "inherit" }}
     >
       {displayedText}
@@ -181,7 +181,7 @@ const TextType = ({
     showCursor && (
       <span
         ref={cursorRef}
-        className={`text-type__cursor ${cursorClassName} ${shouldHideCursor ? "text-type__cursor--hidden" : ""}`}
+        className={`ml-1 inline-block opacity-100 ${shouldHideCursor ? "hidden" : ""} ${cursorClassName}`}
       >
         {cursorCharacter}
       </span>

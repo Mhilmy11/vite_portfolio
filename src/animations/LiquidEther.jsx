@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import "../App.css";
 
 export default function LiquidEther({
   mouseForce = 20,
@@ -1222,7 +1221,7 @@ export default function LiquidEther({
   return (
     <div
       ref={mountRef}
-      className={`liquid-ether-container ${className || ""}`}
+      className={`w-full h-full relative overflow-hidden pointer-events-none touch-none ${className || ""}`}
       style={style}
     />
   );

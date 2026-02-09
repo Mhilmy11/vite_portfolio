@@ -25,7 +25,7 @@ const BlurText = ({
   animationFrom,
   animationTo,
   easing = (t) => t,
-  //   onAnimationComplete,
+  onAnimationComplete,
   stepDuration = 0.35,
 }) => {
   const elements = animateBy === "words" ? text.split(" ") : text.split("");
@@ -77,11 +77,7 @@ const BlurText = ({
   );
 
   return (
-    <p
-      ref={ref}
-      className={className}
-      style={{ display: "flex", flexWrap: "wrap" }}
-    >
+    <p ref={ref} className={`blur-text ${className} flex flex-wrap`}>
       {elements.map((segment, index) => {
         const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots);
 
@@ -99,9 +95,9 @@ const BlurText = ({
             initial={fromSnapshot}
             animate={inView ? animateKeyframes : fromSnapshot}
             transition={spanTransition}
-            // onAnimationComplete={
-            //   index === elements.length - 1 ? onAnimationComplete : undefined
-            // }
+            onAnimationComplete={
+              index === elements.length - 1 ? onAnimationComplete : undefined
+            }
           >
             {segment === " " ? "\u00A0" : segment}
             {animateBy === "words" && index < elements.length - 1 && "\u00A0"}
