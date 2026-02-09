@@ -7,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import OtherProject from "./components/OtherProject";
 import PersonalExperience from "./components/PersonalExperience";
 import TechnicalSkill from "./components/TechnicalSkill";
+import LiquidEther from "./animations/LiquidEther";
 
 function App() {
   const scrollToBottom = useRef(null);
@@ -21,23 +22,44 @@ function App() {
         clickToSection={() => scrollToSection(scrollToBottom)}
       />
 
-      <div className=" bg-slate-800 pt-20">
-        <AboutSection scrollToBottom={scrollToBottom} />
+      <div className="relative min-h-screen pt-20 overflow-hidden">
+        <div className="absolute inset-0 -z-10 bg-black">
+          <LiquidEther
+            colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
+            mouseForce={20}
+            cursorSize={100}
+            isViscous
+            viscous={30}
+            iterationsViscous={32}
+            iterationsPoisson={32}
+            resolution={0.5}
+            isBounce={false}
+            autoDemo
+            autoSpeed={0.5}
+            autoIntensity={2.2}
+            takeoverDuration={0.25}
+            autoResumeDelay={3000}
+            autoRampDuration={0.6}
+            color0="#5227FF"
+            color1="#FF9FFC"
+            color2="#B19EEF"
+          />
+        </div>
 
-        <OtherProject />
+        <div className="relative z-10">
+          <AboutSection scrollToBottom={scrollToBottom} />
+          <OtherProject />
+          <PersonalExperience />
+          <TechnicalSkill />
+          <ContactPerson />
 
-        <PersonalExperience />
-
-        <TechnicalSkill />
-
-        <ContactPerson />
-
-        <Container>
-          <div className=" text-gray-200 font-semibold mt-14 mb-10 flex justify-between items-center px-10 italic">
-            <p>© {new Date().getFullYear()}</p>
-            <p>Muhammad Hilmy Setiawanto</p>
-          </div>
-        </Container>
+          <Container>
+            <div className="text-gray-200 font-semibold mt-14 mb-10 flex justify-between items-center px-10 italic">
+              <p>© {new Date().getFullYear()}</p>
+              <p>Muhammad Hilmy Setiawanto</p>
+            </div>
+          </Container>
+        </div>
       </div>
     </div>
   );

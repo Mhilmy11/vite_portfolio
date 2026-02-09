@@ -22,7 +22,10 @@ export default function AboutSection({ scrollToBottom }) {
               Mercu Buana University
             </span>{" "}
             majoring in{" "}
-            <span className=" font-bold text-white">Technic Informatika</span>.
+            <span className=" font-bold text-white">
+              informatics engineering
+            </span>
+            .
           </p>
 
           <p className=" text-slate-400 text-lg">My recent works :</p>
