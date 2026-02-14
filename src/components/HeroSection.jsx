@@ -3,20 +3,40 @@ import { FiArrowDown } from "react-icons/fi";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import BlurText from "../animations/BlurText";
 import TextType from "../animations/TextType";
-import DarkVeil from "../animations/DarkVeil";
+// import DarkVeil from "../animations/DarkVeil";
+import PixelBlast from "../animations/PixelBlast";
 
 export default function HeroSection({ clickToSection, pdfPath }) {
   return (
     <>
       <section className="relative min-h-screen overflow-hidden flex items-center">
         <div className="absolute inset-0">
-          <DarkVeil
+          {/* <DarkVeil
             hueShift={0}
             noiseIntensity={0}
             scanlineIntensity={0}
             speed={1.5}
             scanlineFrequency={0}
             warpAmount={0}
+          /> */}
+          <PixelBlast
+            variant="square"
+            pixelSize={4}
+            color="#121063"
+            patternScale={2}
+            patternDensity={1}
+            pixelSizeJitter={0}
+            enableRipples
+            rippleSpeed={0.4}
+            rippleThickness={0.12}
+            rippleIntensityScale={1.5}
+            liquid={false}
+            liquidStrength={0.12}
+            liquidRadius={1.2}
+            liquidWobbleSpeed={5}
+            speed={0.5}
+            edgeFade={0.25}
+            transparent
           />
         </div>
 

@@ -7,7 +7,7 @@ import HeroSection from "./components/HeroSection";
 import OtherProject from "./components/OtherProject";
 import PersonalExperience from "./components/PersonalExperience";
 import TechnicalSkill from "./components/TechnicalSkill";
-import LiquidEther from "./animations/LiquidEther";
+import PixelSnow from "./animations/PixelSnow";
 
 function App() {
   const scrollToBottom = useRef(null);
@@ -27,26 +27,20 @@ function App() {
         ref={scrollToBottom}
       >
         <div className="absolute inset-0 -z-10 bg-black">
-          <LiquidEther
-            colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-            mouseForce={20}
-            cursorSize={100}
-            isViscous
-            viscous={30}
-            iterationsViscous={32}
-            iterationsPoisson={32}
-            resolution={0.5}
-            isBounce={false}
-            autoDemo
-            autoSpeed={1}
-            autoIntensity={2.2}
-            takeoverDuration={0.25}
-            autoResumeDelay={3000}
-            autoRampDuration={0.6}
-            color0="#5227FF"
-            color1="#FF9FFC"
-            color2="#B19EEF"
-          />
+          {/* <PixelSnow
+            color="#121063"
+            flakeSize={0.01}
+            minFlakeSize={1.25}
+            pixelResolution={200}
+            speed={1.25}
+            density={0.3}
+            direction={125}
+            brightness={1}
+            depthFade={8}
+            farPlane={20}
+            gamma={0.4545}
+            variant="square"
+          /> */}
         </div>
 
         <div className="relative z-10">
