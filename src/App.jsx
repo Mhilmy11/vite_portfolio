@@ -18,7 +18,7 @@ function App() {
   return (
     <div className=" font-sans">
       <HeroSection
-        pdfPath={"/files/Curriculum Vitae_Muhammad Hilmy Setiawanto.pdf"}
+        pdfPath={"/files/Curriculum Vitae-Muhammad Hilmy Setiawanto.pdf"}
         clickToSection={() => scrollToSection(scrollToBottom)}
       />
 

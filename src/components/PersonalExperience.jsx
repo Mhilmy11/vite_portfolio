@@ -28,13 +28,18 @@ export default function PersonalExperience() {
 
           <div className=" flex justify-between items-center">
             <div>
-              <h1 className=" font-bold text-gray-200 text-xl">
-                Business Analyst
-              </h1>
+              <div className=" flex items-center gap-3">
+                <h1 className=" font-bold text-gray-200 text-xl">
+                  Business Analyst
+                </h1>
+                <p className=" text-white bg-green-500/30 px-4 py-0.5 rounded-full text-sm border border-green-500">
+                  Present
+                </p>
+              </div>
               <p className=" text-slate-400">at PT Enakans Media Teknologi</p>
             </div>
             <span className="bg-slate-900/50 px-2 py-0.5 rounded-3xl border border-slate-700 text-gray-200 font-semibold text-xl">
-              2024
+              2023
             </span>
           </div>
 
@@ -48,7 +53,7 @@ export default function PersonalExperience() {
               <p className=" text-slate-400">at PT RA Consulting</p>
             </div>
             <span className="bg-slate-900/50 px-2 py-0.5 rounded-3xl border border-slate-700 text-gray-200 font-semibold text-xl">
-              2023
+              2022
             </span>
           </div>
 
