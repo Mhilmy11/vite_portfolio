@@ -39,7 +39,7 @@ export default function PersonalExperience() {
               <p className=" text-slate-400">at PT Enakans Media Teknologi</p>
             </div>
             <span className="bg-slate-900/50 px-2 py-0.5 rounded-3xl border border-slate-700 text-gray-200 font-semibold text-xl">
-              2023
+              2024
             </span>
           </div>
 
